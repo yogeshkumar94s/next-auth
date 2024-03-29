@@ -24,6 +24,9 @@ import {
 const LoginForm = () => {
   const [error, setError] = useState<string | undefined>("");
   const [success, setSuccess] = useState<string | undefined>("");
+
+  // Utilizing useTransition from React to manage state transitions is an excellent way to ensure the UI remains responsive, especially for operations that might take some time, like network requests.
+
   const [isPending, startTransition] = useTransition();
   const form = useForm<z.infer<typeof LoginSchema>>({
     resolver: zodResolver(LoginSchema),
