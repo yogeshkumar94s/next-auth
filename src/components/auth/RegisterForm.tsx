@@ -7,8 +7,8 @@ import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Button } from "../ui/button";
-import { FormError } from "../FormError";
-import { FormSuccess } from "../FormSuccess";
+import FormError from "@/components/FormError";
+import FormSuccess from "@/components/FormSuccess";
 import { register } from "@/actions/register";
 import { useState, useTransition } from "react";
 
